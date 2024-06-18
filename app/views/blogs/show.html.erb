@@ -17,3 +17,9 @@
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
+
+<hr>
+
+<div id="favorite-<%= blog.id %>">
+ <%= render partial: "blogs/favorite", locals: { blog: blog } if blog.user != current_user %>
+

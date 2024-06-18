@@ -7,6 +7,8 @@ class BlogsController < ApplicationController
   end
 
   def show
+    #@favorites = @blog.favorites
+    #@favorite = @blog.favorites.build
   end
 
   def new
